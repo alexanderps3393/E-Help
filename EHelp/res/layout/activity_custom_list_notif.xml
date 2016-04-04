@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp" 
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imgNotif"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/pemkeb" />
+
+    <LinearLayout
+        android:id="@+id/linClickedNotif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_weight="0.57"
+        android:background="@drawable/button_help"
+        android:orientation="vertical" 
+        android:onClick="onClick">
+
+        <TextView
+            android:id="@+id/TVnamaNotif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.79"
+            android:paddingLeft="20dp"
+            android:text="BM.Yanti Siregar"
+            android:textColor="@color/blue"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TVcontentNotif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.79"
+            android:paddingLeft="20dp"
+            android:text="MELAHIRKAN"
+            android:textColor="@color/blue"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TVWaktuNotif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.79"
+            android:paddingLeft="20dp"
+            android:text="10-10-2015; 23:40"
+            android:textColor="@color/blue"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+<!--     <LinearLayout -->
+<!--         android:id="@+id/imgCloseNotif" -->
+<!--         android:layout_width="30dp" -->
+<!--         android:layout_height="30dp" -->
+<!--         android:layout_gravity="left" -->
+<!--         android:layout_weight="0.06" -->
+<!--         android:background="@drawable/button_close" -->
+<!--         android:onClick="onClick" -->
+<!--         android:orientation="vertical" > -->
+        
+<!--     <ImageView -->
+<!--         android:id="@+id/imgClose" -->
+<!--         android:layout_width="25dp" -->
+<!--         android:layout_height="25dp" -->
+<!--         android:layout_gravity="center" -->
+<!--         android:src="@drawable/close"  -->
+<!--         /> -->
+<!--     </LinearLayout> -->
+
+</LinearLayout>

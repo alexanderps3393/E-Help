@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gawat"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+>
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission
+        android:name="com.example.gawat.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.example.gawat.permission.MAPS_RECEIVE" />
+
+    <!-- Network State Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Access Location -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/yeah"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyANbTVscLdyyZWxF6YmNphtii4VkVxqhqE" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SecondActivity"
+            android:label="@string/title_activity_second" >
+        </activity>
+        <activity
+            android:name=".Contact"
+            android:label="@string/title_activity_splash" >
+        </activity>
+        <activity
+            android:name=".Tambah_Profil"
+            android:label="@string/title_activity_tambah__profil" >
+        </activity>
+        <activity
+            android:name=".Grid"
+            android:label="@string/title_activity_grid" >
+        </activity>
+        <activity
+            android:name=".Keluhan"
+            android:label="@string/title_activity_keluhan" >
+        </activity>
+        <activity
+            android:name=".CustomListKeluhan"
+            android:label="@string/title_activity_custom_list" >
+        </activity>
+        <activity
+            android:name=".PilihKontak"
+            android:label="@string/title_activity_pilih_kontak" >
+        </activity>
+        <activity
+            android:name=".GridKontak"
+            android:label="@string/title_activity_grid_kontak" >
+        </activity>
+        <activity
+            android:name=".PilihKeluhan"
+            android:label="@string/title_activity_pilih_keluhan" >
+        </activity>
+        <activity
+            android:name=".GPSTracker"
+            android:label="@string/title_activity_gpstracker" >
+        </activity>
+        <activity
+            android:name=".RegisterModel"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name=".TambahPegawai"
+            android:label="@string/title_activity_tambah_pegawai" >
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".RSMainActivity"
+            android:label="@string/title_activity_rsmain" >
+        </activity>
+        <activity
+            android:name=".CustomListNotif"
+            android:label="@string/title_activity_custom_list_notif" >
+        </activity>
+        <activity
+            android:name=".LvNotif"
+            android:label="@string/title_activity_lv_notif" >
+        </activity>
+        <activity
+            android:name=".LvAmbulance"
+            android:label="@string/title_activity_lv_ambulance" >
+        </activity>
+        <activity
+            android:name=".CustomListAmbulance"
+            android:label="@string/title_activity_custom_list_ambulance" >
+        </activity>
+        <activity
+            android:name=".CustomListHistory"
+            android:label="@string/title_activity_custom_list_history" >
+        </activity>
+        <activity
+            android:name=".LvHistory"
+            android:label="@string/title_activity_lv_history" >
+        </activity>
+        <activity
+            android:name=".AddContact"
+            android:label="@string/title_activity_add_contact" >
+        </activity>
+        <activity
+            android:name=".SendEmailActivity"
+            android:label="@string/title_activity_send_email" >
+        </activity>
+        <activity
+            android:name=".GMailMain"
+            android:label="@string/title_activity_automatic_email" >
+        </activity>
+        <activity
+            android:name=".TestAPIActivity"
+            android:label="@string/title_activity_test_api" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Fragment"
+            android:label="@string/title_activity_fragment" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CustomListNamaRS"
+            android:label="@string/title_activity_custom_list_nama_rs" >
+        </activity>
+        <activity
+            android:name=".OrangLain"
+            android:label="@string/title_activity_orang_lain" >
+        </activity>
+        <activity
+            android:name=".ViewKeluhanOrang"
+            android:label="@string/title_activity_view_keluhan_orang" >
+        </activity>
+    </application>
+
+</manifest>
